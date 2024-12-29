@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="index.html">
+            <img src="back.png.jpg" alt="back arrow">
+        </a>
+    </div>
+    <br>
+    <br>
+    
+    <div class="form-container">
+        <div class="logo">
+            <img src="logo.png.jpg" alt="SMIT Logo">
+        </div>
+        <h2>STUDENT REGISTRATION FORM</h2>
+        
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" maxlength="30" placeholder="Enter the First Name" required>
+            <p> (max 30 chatacter a-z and A-Z)</p>
+            <br>
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" maxlength="30" placeholder="Enter the Last Name" required>
+            <p> (max 30 chatacter a-z and A-Z)</p>
+            <br>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <br>
+            
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter the Email Address" required>
+            <br>
+            <br>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Enter the Mobile Number" required>
+            <P> (10 Digits Numbers) </P>
+            <br>
+            <br>
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <br>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" ></textarea>
+            <br>
+            <br>
+            
+ 
+           <label for="city">CITY</label>
+           <input type="text" id="city" name="city" placeholder="Enter the City Name" maxlength="30" required>
+          <p>(max 30 chatacter a-z and A-Z) </p>
+           <br>
+          <br>
+
+          <label for="pincode">PIN CODE</label>
+         <input type="text" id="pincode" name="pincode" placeholder="Enter the Pin Code" maxlength="6" required pattern="\d{6}">
+         <p>(Digits Numbers)</p>
+         <br>
+         <br>
+
+         <label for="state">STATE</label>
+         <input type="text" id="state" name="state" placeholder="Enter the State" maxlength="30" required>
+         <p> (max 30 chatacter a-z and A-Z)</p>
+         <br>
+         <br>
+
+         <label for="country">COUNTRY</label>
+         <input type="text" id="country" name="country" placeholder="Enter the Country Name" maxlength="30" required>
+          <br>
+          <br>
+    
+         <label for="hobbies">HOBBIES</label> 
+         <div class="hobbies">
+            <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+            <label for="drawing">Drawing</label>   
+            <input type="checkbox" id="singing" name="hobbies" value="Singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" id="sketching" name="hobbies" value="Sketching">
+            <label for="sketching">Sketching</label>
+
+            <label for="Other"> Other</label>
+            <input type="text" id="otherHobbies" name="otherHobbies" placeholder="Others">
+ 
+        </div>
+        <br>
+        <br>
+
+        <label for="qualification">QUALIFICATION</label>
+ 
+        <table>
+            <thead>
+                <tr>
+             
+                    <th>Sl.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+     
+             </thead>
+     
+             <tbody>
+             <tr>
+             <td>1</td>
+             <td>Class X</td>
+             <td><input type="text" name="classX_board" maxlength="10"></td>
+             <td><input type="number" name="classX_percentage" step="0.01" min="0" max="100"></td>
+             <td><input type="text" name="classX_year" maxlength="4" pattern="\d{4}"></td>
+            </tr>
+            <tr>
+             <td>2</td>
+             <td>Class XII</td>
+             <td><input type="text" name="classXII_board" maxlength="10"></td>
+             <td><input type="number" name="classXII_percentage" step="0.01" min="0" max="100"></td>
+             <td><input type="text" name="classXII_year" maxlength="4" pattern="\d{4}"></td>
+         </tr>
+         <tr>
+             <td>3</td>
+             <td>Graduation</td>
+             <td><input type="text" name="graduation_board" maxlength="10"></td>
+             <td><input type="number" name="graduation_percentage" step="0.01" min="0" max="100"></td>
+             <td><input type="text" name="graduation_year" maxlength="4" pattern="\d{4}"></td>
+         </tr>
+         <tr>
+             <td>4</td>
+             <td>Masters</td>
+             <td><input type="text" name="masters_board" maxlength="10"></td>
+             <td><input type="number" name="masters_percentage" step="0.01" min="0" max="100"></td>
+             <td><input type="text" name="masters_year" maxlength="4" pattern="\d{4}"></td>
+         </tr>
+     </tbody>
+ </table>
+ <br>
+ <br>
+ <label for="course">COURSES APPLIED FOR</label>
+ <select name="course" id="course">
+     <option value="">Select any course</option>
+     <option value="course1">Course 1</option>
+     <option value="course2">Course 2</option>
+     <option value="course3">Course 3</option>
+ </select>
+ <br>
+ <br>
+
+
+ <label for="photo">Upload your pic (only png, jpg, jpeg formats allowed)</label>
+ <input type="file" id="photo" name="photo" accept=".png, .jpg, .jpeg" required>
+ <br>
+ <br>
+
+ 
+ <div class="buttons">
+     <button type="submit">Submit</button>
+     <button type="reset">Reset</button>
+
+        </form>
+    </div>
+</body>
+</html>
